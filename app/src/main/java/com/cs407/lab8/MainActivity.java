@@ -27,5 +27,6 @@ public class MainActivity extends AppCompatActivity {
             //code to display mMap
             googleMap.addMarker(new MarkerOptions().position(mDestinationLatLng).title("Destination"));
         });
+        System.out.println("test");
     }
 }
