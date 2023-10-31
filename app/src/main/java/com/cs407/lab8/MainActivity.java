@@ -66,6 +66,10 @@ public class MainActivity extends FragmentActivity {
                             mMap.addPolyline(new PolylineOptions().add(
                                     new LatLng(mLastKnownLocation.getLatitude(), mLastKnownLocation.getLongitude()),
                                     mDestinationLatLng));
+                            LatLng mCurrLatLng = new LatLng(mLastKnownLocation.getLatitude(), mLastKnownLocation.getLongitude());
+                            mMap.addMarker(new MarkerOptions()
+                                    .position(mCurrLatLng)
+                                    .title("Current location"));
                         }
                     });
         }
